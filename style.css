@@ -1,0 +1,85 @@
+textarea
+{
+	display: block;
+	width: 730px;
+	height: 120px;
+	margin: 5px;
+}
+
+textarea.sum, textarea#dec
+{
+	height: 50px;
+}
+
+input.sum
+{
+	width: 730px;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 2px 0px 0px 2px;
+}
+
+textarea.err
+{
+	background-color: red;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+a:active {
+	color: #FAA700;
+}
+a {
+	text-decoration: none;
+	color: #0645AD;
+	background: none;
+}
+
+#content
+{
+	background: white;
+	border: 2px solid #CCC;
+	width: auto;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding: 0 30px 3em;
+}
+
+#pagew
+{
+	margin: 0 auto;
+	width: 98%;
+	max-width: 800px;
+}
+body
+{
+	background: #D6D6D6;
+}
+
+ul.radio
+{ 
+  margin: 0; 
+  padding: 0; 
+  margin-left: 20px; 
+  list-style: none; 
+}
+
+a.sup
+{
+	font-size: 9px;
+	vertical-align: super;
+	line-height: 8px;
+}
+
+ul.checkbox
+{ 
+	margin: 0; 
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+ul.checkbox li {
+	float: left;
+}

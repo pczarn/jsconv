@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <title>JavaScript data converter</title>
+    <link href='style.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='pagew'>
+      <div id='content'>
+        <h2>Values</h2>
+        <a href='http://en.wikipedia.org/wiki/ASCII' target='_blank'>
+          <acronym title='American Standard Code for Information Interchange'>ASCII</acronym>
+        </a>
+        <textarea id='ascii'></textarea>
+        Binary
+        <button onclick="load('bin')">Load &uarr;</button>
+        <textarea id='bin'></textarea>
+        Hexadecimal
+        <button onclick="load('hex')">Load &uarr;</button>
+        <textarea id='hex'></textarea>
+        Decimal
+        <button onclick="load('dec')">Load &uarr;</button>
+        <textarea id='dec'></textarea>
+        <a href='http://en.wikipedia.org/wiki/Base64'>Base64</a> encoding
+        <button onclick="load('base64')">Load &uarr;</button>
+        <textarea id='base64'></textarea>
+        <a href='http://en.wikipedia.org/wiki/Percent-encoding'>URL encoding</a>
+        <button onclick="load('urlenc')">Load &uarr;</button>
+        <textarea id='urlenc'></textarea>
+        <a href='http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references'>HTML entities</a>
+        <button onclick="load('ent')">Load &uarr;</button>
+        <textarea id='ent'></textarea>
+
+        <h2>Hash functions</h2>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/SHA-1'>SHA-1</a>
+        </tt>
+        <textarea class='sum' disabled='disabled' id='sha1'></textarea>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/SHA-2'>SHA-224</a>
+        </tt>
+        <textarea class='sum' disabled='disabled' id='sha224'></textarea>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/SHA-2'>SHA-256</a>
+        </tt>
+        <textarea class='sum' disabled='disabled' id='sha256'></textarea>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/SHA-2'>SHA-384</a>
+        </tt>
+        <textarea class='sum' disabled='disabled' id='sha384'></textarea>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/SHA-2'>SHA-512</a>
+        </tt>
+        <textarea class='sum' disabled='disabled' id='sha512'></textarea>
+        <tt>
+          <a href='http://en.wikipedia.org/wiki/Adler-32'>Adler32</a>
+        </tt>
+        <input id='adler32_hex' name='adler32' onchange='update_adler32()' type='radio' value='hex' checked='yes' /><label for='adler32_hex'>hex</label>
+        <input id='adler32_dec' name='adler32' onchange='update_adler32()' type='radio' value='dec' /><label for='adler32_dec'>dec</label>
+        <input id='adler32_bin' name='adler32' onchange='update_adler32()' type='radio' value='bin' /><label for='adler32_bin'>bin</label>
+        <input class='sum' disabled='disabled' id='adler32' type='text' />
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src='js/sha.js' type='text/javascript'></script>
+    <script src='js/adler32.js' type='text/javascript'></script>
+    <script src='js/main.js' type='text/javascript'></script>
+  </body>
+</html>
